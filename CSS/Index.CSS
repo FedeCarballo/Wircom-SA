@@ -1,0 +1,31 @@
+.header{
+    background-color: #8c2d18 !important;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width: 15vh;
+    background-color: #8c2d18 !important;
+}
+.header nav {
+    background-color: #8c2d18 !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    justify-content: space-around !important; 
+}
+
+.nav-link{
+    color: white !important;
+    font-size: larger !important;
+    justify-content: space-around !important;
+}
+.POLITICA, .SERVICIOS{
+    background-color: #8c2d18;
+    color: white;
+}
+.POLITICA__P{
+    width: 85%;
+    margin: auto;
+}

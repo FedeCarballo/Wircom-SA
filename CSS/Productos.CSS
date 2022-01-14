@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .header{
     background-color: #8c2d18 !important;
     display: flex;
@@ -20,4 +24,22 @@
     color: white !important;
     font-size: larger !important;
     justify-content: space-around !important;
+}
+
+.Products__text {
+    background-color: #8c2d18;
+    color: white;
+    margin:auto;
+}
+.Products__text__title{
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+.Products__text p {
+    width: 85%;
+    margin: auto;
+    
 }

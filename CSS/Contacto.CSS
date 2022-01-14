@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.header{
+    background-color: #8c2d18 !important;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width: 15vh;
+    background-color: #8c2d18 !important;
+}
+.header nav {
+    background-color: #8c2d18 !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    justify-content: space-around !important; 
+}
+
+.nav-link{
+    color: white !important;
+    font-size: larger !important;
+    justify-content: space-around !important;
+}
+.Title
+    {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 10vh;
+        background-image: url('../media/images/Titles.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.Title h1{
+    width: 85%;
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+}
+.CONTACTO{
+    text-align: center;
+}
+
+.CONTACTO p{
+    font-size: 2.5vh;
+}
+.CONTACTO__titles {
+    color: #8c2d18 ;
+    font-size: 4vh !important;
+    text-align: center;
+    margin: 3vh 0 3vh 0;
+}
+
+.CONTACTO__button{
+    border: #8c2d18 solid !important;
+    color: #8c2d18;
+    width: 20vh;
+    font-size: 2.5vh;
+}
