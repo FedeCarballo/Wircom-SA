@@ -1,8 +1,46 @@
-.header{
-    background-color: #8c2d18 !important;
-    display: flex;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.TEXT__title{
+    font-size: 5.5vh;
+    color: #8c2d18 ;
+    text-align: center;
+    margin: 4vh 0 4vh 0;
+}
+.TEXT__title__white{
+    width: 94%;
+    margin: auto;
+    font-size: 5.5vh;
+    text-align: center;
+    margin: 3vh 0 3vh 0;
+}
+
 .header img{
     width: 15vh;
     background-color: #8c2d18 !important;
@@ -14,18 +52,201 @@
 .navbar-nav {
     display: flex !important;
     justify-content: space-around !important; 
-}
+    }
 
 .nav-link{
     color: white !important;
     font-size: larger !important;
     justify-content: space-around !important;
 }
+
+.Carousell{
+    width: 100%;
+}
 .POLITICA, .SERVICIOS{
     background-color: #8c2d18;
     color: white;
 }
+.EMPRESA {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+.POLITICA h1{
+    text-align: center;
+    padding-top: 3vh;
+}
+
 .POLITICA__P{
+    padding-top: 2vh;
     width: 85%;
     margin: auto;
+    text-align: center;
+    padding-bottom: 2vh;
 }
+.POLITICA__LI{
+    width: 85%;
+    margin:auto;
+    text-align: center;
+    line-height: 3.5vh;
+}
+.img__logo1{
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    width: 13vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.img__logo2{
+    padding-bottom: 1vh;
+    width: 20vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.PRODUCTOS{
+    padding: 4vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PRODUCTOS__BUTTON, .MAS__BUTTON {
+    border: #8c2d18 solid !important;
+    color: #8c2d18;
+    padding: 1.6vh;
+    font-size: 2.5vh;
+}
+
+.SERVICIOS{
+    padding:5vh 0 5vh 0; 
+    align-items: center;
+}
+
+.SERVICIOS h1{
+    text-align: center;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.SERVICIOS__DIV {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.SERVICIOS__IMG {
+    width: 7vh;
+}
+
+.SERVICIOS__P{
+    margin: 2vh 0 2vh 0;
+    padding-bottom: 2vh;
+}
+
+
+.GALERIA {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #8c2d18 !important;
+    color: white; 
+}
+  
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px; 
+}
+.img__logo3{
+    width: 9vh;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-around; 
+} 
+ 
+.column1 {
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.column1 h1 {
+      font-size: 3vh; }
+
+.column1 label {
+      color: #c7c7c7;
+      text-align: center !important;
+      font-size: 2.3vh !important;
+    }
+
+.column2 {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}       
+
+.column3 {
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column3__p{
+    font-size: 2.3vh; 
+    margin: auto;
+    text-align: center;
+}
+.column3 h1 {
+    padding-top: 2vh;
+    font-size: 3.5vh; 
+    padding-bottom: 2vh;
+}
+
+.row2 p {
+    font-size: 3vh; 
+}
+
+@media screen and (max-width: 650px) {
+      .container-body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width:400px) and (max-width: 900px) {
+    .container-body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+}
+    .column1 label, .column2 label, .column3 ul li {
+        font-size: 2.5vh !important; }
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+      flex-wrap: wrap; }
+    .column2, .column3 {
+      margin-top: 40px; }
+    .column1 label, .column2 label {
+      font-size: 1.9vh; } }
