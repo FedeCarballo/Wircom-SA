@@ -5,6 +5,7 @@
 a{
     text-decoration: none !important;
 }
+/* BOTON WHATSAPP */
 .float{
 	position:fixed;
 	width:60px;
@@ -29,6 +30,7 @@ a{
 	margin-top:16px;
 }
 
+/*NAVBAR*/
 .header img{
     width: 15vh;
     background-color: #8c2d18 !important;
@@ -47,10 +49,12 @@ a{
     font-size: larger !important;
     justify-content: space-around !important;
 }
+
+/* TITULOS */
 .Title
     {
         width: 100%;
-        height: 25vh;
+        height: 40vh;
         margin-bottom: 10vh;
         background-image: url('/media/images/carousell/WhatsApp\ Image\ 2022-01-03\ at\ 1.06.31\ PM.jpeg');
         background-position: center;
@@ -66,6 +70,8 @@ a{
     color: white;
     font-size: 5vh;
 }
+
+/* MEDIOS DE CONTACTO */
 .CONTACTO{
     text-align: center;
     padding-bottom: 4vh;
@@ -95,6 +101,8 @@ a{
     display: flex;
     align-items: center;
 }
+
+/* FOOTER */
 footer {
     width: 100%;
     background-color: #8c2d18 !important;
@@ -162,6 +170,50 @@ footer {
     font-size: 3vh; 
 }
 
+/* RESPONSIVE */
+@media screen and (min-width: 990px) {
+
+    .TEXT__title, .CONTACTO__titles{
+        font-size: 5.8vh;
+        color: #8c2d18 ;
+        text-align: center;
+        margin: 8vh 0;
+    }
+    .TEXT__title__white{
+        width: 94%;
+        margin: auto;
+        font-size: 5.5vh;
+        text-align: center;
+        padding: 8vh 0;
+    }
+    .navbar {
+        display: flex !important;
+
+    }
+    .navbar-collapse{
+        display: flex !important;
+    }
+    .navbar-nav{ 
+        margin: 0 3vh;
+    }
+    .nav-link{
+        margin: 0 3vh;
+        font-size: 2.5vh !important;
+    }
+    .container-fluid img{
+        width: 10vh;
+    }
+    .CONTACTO{
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .CONTACTO div{
+        width: 40%;
+    }
+}
 @media screen and (max-width: 650px) {
       .container-body {
         display: flex;

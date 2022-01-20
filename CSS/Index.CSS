@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
 }
+/* BOTON WHATSAPP */
 .float{
 	position:fixed;
 	width:60px;
@@ -27,6 +28,7 @@
 	margin-top:16px;
 }
 
+/*TITULOS PRINCIPALES*/
 .TEXT__title{
     font-size: 5.5vh;
     color: #8c2d18 ;
@@ -41,6 +43,7 @@
     margin: 3vh 0 3vh 0;
 }
 
+/*NAVBAR*/
 .header img{
     width: 15vh;
     background-color: #8c2d18 !important;
@@ -60,9 +63,12 @@
     justify-content: space-around !important;
 }
 
+/*CAROUSELL*/
 .Carousell{
     width: 100%;
 }
+
+/* EMPRESA Y PRODUCTOS */
 .POLITICA, .SERVICIOS{
     background-color: #8c2d18;
     color: white;
@@ -78,6 +84,7 @@
     padding-top: 3vh;
 }
 
+/* POLITICA */
 .POLITICA__P{
     padding-top: 2vh;
     width: 85%;
@@ -106,6 +113,8 @@
     display: flex;
     align-items: center;
 }
+
+/* VER PRODUCTOS */
 .PRODUCTOS{
     padding: 4vh;
     margin: auto;
@@ -120,6 +129,7 @@
     font-size: 2.5vh;
 }
 
+/* SERVICIOS */
 .SERVICIOS{
     padding:5vh 0 5vh 0; 
     align-items: center;
@@ -146,7 +156,7 @@
     padding-bottom: 2vh;
 }
 
-
+/* GALERIA */
 .GALERIA {
     width: 50%;
     margin: auto;
@@ -157,6 +167,7 @@
     align-items: center;
 }
 
+/* FOOTER */
 footer {
     width: 100%;
     background-color: #8c2d18 !important;
@@ -222,6 +233,93 @@ footer {
 
 .row2 p {
     font-size: 3vh; 
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 990px) {
+
+    .TEXT__title{
+        font-size: 5.8vh;
+        color: #8c2d18 ;
+        text-align: center;
+        margin: 8vh 0;
+    }
+    .TEXT__title__white{
+        width: 94%;
+        margin: auto;
+        font-size: 5.5vh;
+        text-align: center;
+        padding: 8vh 0;
+    }
+    .navbar {
+        display: flex !important;
+
+    }
+    .navbar-collapse{
+        display: flex !important;
+    }
+    .navbar-nav{ 
+        margin: 0 3vh;
+    }
+    .nav-link{
+        margin: 0 3vh;
+        font-size: 2.5vh !important;
+    }
+    .container-fluid img{
+        width: 10vh;
+    }
+    .Carousel1{
+        width:1500px;
+        margin: auto;
+    }
+    .EMPRESA{
+        margin: 10vh 0;
+        width: 90%;
+        display: flex;
+    }
+    .EMPRESA__TITLE__TEXT{
+        width: 70%;
+    }
+    .EMPRESA__TITLE__TEXT p{
+        width: 80%;
+        margin: auto;
+    }
+    .EMPRESA__BUTTON{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .POLITICA{
+        padding-top: 6vh;
+    }
+    
+    .POLITICA__P{
+        width: 70%;
+        font-size: 2.5vh;
+        margin-bottom: 3vh;
+    }
+    .POLITICA__LI {
+        margin-top:2vh;
+        width: 75%;
+        text-align: start;
+        font-size: 2vh;
+        line-height: 8vh;
+    }
+    .PRODUCTOS{
+        margin: 5vh 0;
+    }
+    .SERVICIOS__DIV{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .SERVICIOS__DIV div{
+        width: 45%;
+        margin-top: 2vh;
+    }
 }
 
 @media screen and (max-width: 650px) {
