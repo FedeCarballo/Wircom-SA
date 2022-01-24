@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+}
+@font-face{
+    font-family: nunito-black;
+    src: url(/font/NunitoSans-Black.ttf);
 }
 /* BOTON WHATSAPP */
 .float{
@@ -34,6 +39,7 @@
     color: #8c2d18 ;
     text-align: center;
     margin: 4vh 0 4vh 0;
+    font-family: nunito-black;
 }
 .TEXT__title__white{
     width: 94%;
@@ -41,6 +47,7 @@
     font-size: 5.5vh;
     text-align: center;
     margin: 3vh 0 3vh 0;
+    font-family: nunito-black;
 }
 
 /*NAVBAR*/
@@ -68,6 +75,11 @@
     width: 100%;
 }
 
+.carousel-item img{
+    height: 70vh;
+    object-fit: cover ;
+}
+
 /* EMPRESA Y PRODUCTOS */
 .POLITICA, .SERVICIOS{
     background-color: #8c2d18;
@@ -77,38 +89,62 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-bottom: 3vh;
+    padding-bottom: 20vh;
 }
+
 .POLITICA h1{
     text-align: center;
     padding-top: 3vh;
 }
-
+.MAS__BUTTON{
+    margin: 3vh;
+    padding: 1vh 4vh !important;
+    font-size: 2vh !important;
+}
 /* POLITICA */
+.POLITICA__title{
+    padding: 8vh ;
+    width: 90%;
+    margin: auto;
+    font-size: 5.5vh;
+    text-align: center;
+    font-family: nunito-black;
+}
+
 .POLITICA__P{
-    padding-top: 2vh;
-    width: 85%;
+    width: 60%;
     margin: auto;
     text-align: center;
     padding-bottom: 2vh;
 }
+.POLITICA__P2{
+    padding-top: 4vh;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 6vh;
+}
 .POLITICA__LI{
-    width: 85%;
+    width: 55%;
     margin:auto;
     text-align: center;
-    line-height: 3.5vh;
+    line-height: 3vh;
+   
+}
+.POLITICA__LI li{
+     margin-bottom: 2vh;
 }
 .img__logo1{
     padding-top: 4vh;
     padding-bottom: 2vh;
-    width: 13vh;
+    width: 9vh;
     margin: auto;
     display: flex;
     align-items: center;
 }
 .img__logo2{
     padding-bottom: 1vh;
-    width: 20vh;
+    width: 12vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -190,29 +226,23 @@ footer {
 } 
  
 .column1 {
-    max-width: 400px; 
+    max-width: 380px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;}
 
 .column1 h1 {
-      font-size: 3vh; }
-
-.column1 label {
-      color: #c7c7c7;
-      text-align: center !important;
-      font-size: 2.3vh !important;
-    }
+    font-size: 3vh; 
+}
 
 .column2 {
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }       
-
 .column3 {
     max-width: 400px; 
     display: flex;
@@ -227,12 +257,13 @@ footer {
 }
 .column3 h1 {
     padding-top: 2vh;
-    font-size: 3.5vh; 
+    font-size: 4vh; 
     padding-bottom: 2vh;
 }
 
 .row2 p {
-    font-size: 3vh; 
+    font-size: 3.1vh;
+    text-align: center; 
 }
 
 /* RESPONSIVE */
@@ -291,22 +322,25 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    .MAS__BUTTON{
+        padding:1vh 4vh ;
+        font-size: 2vh;
+    }
     .POLITICA{
         padding-top: 6vh;
     }
     
     .POLITICA__P{
-        width: 70%;
-        font-size: 2.5vh;
+        width: 50%;
+        font-size: 2.3vh;
         margin-bottom: 3vh;
     }
     .POLITICA__LI {
         margin-top:2vh;
-        width: 75%;
+        width: 40%;
         text-align: start;
         font-size: 2vh;
-        line-height: 8vh;
+        line-height: 6vh;
     }
     .PRODUCTOS{
         margin: 5vh 0;
@@ -337,8 +371,8 @@ footer {
         justify-content: center;
         align-items: center;
 }
-    .column1 label, .column2 label, .column3 ul li {
-        font-size: 2.5vh !important; }
+    .column3 ul li {
+        font-size: 2vh !important; }
 }
 
 @media screen and (max-width: 1100px) {
@@ -346,5 +380,5 @@ footer {
       flex-wrap: wrap; }
     .column2, .column3 {
       margin-top: 40px; }
-    .column1 label, .column2 label {
+    .column2 label {
       font-size: 1.9vh; } }

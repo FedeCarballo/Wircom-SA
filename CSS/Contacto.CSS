@@ -5,6 +5,10 @@
 a{
     text-decoration: none !important;
 }
+@font-face{
+    font-family: nunito-black;
+    src: url(/font/NunitoSans-Black.ttf);
+}
 /* BOTON WHATSAPP */
 .float{
 	position:fixed;
@@ -54,7 +58,7 @@ a{
 .Title
     {
         width: 100%;
-        height: 40vh;
+        height: 25vh;
         margin-bottom: 10vh;
         background-image: url('/media/images/carousell/WhatsApp\ Image\ 2022-01-03\ at\ 1.06.31\ PM.jpeg');
         background-position: center;
@@ -69,6 +73,7 @@ a{
     text-align: center;
     color: white;
     font-size: 5vh;
+    font-family: nunito-black;
 }
 
 /* MEDIOS DE CONTACTO */
@@ -85,21 +90,17 @@ a{
     font-size: 4vh !important;
     text-align: center;
     margin: 3vh 0 3vh 0;
+    font-family: nunito-black;
 }
 
 .CONTACTO__button{
     border: #8c2d18 solid !important;
     color: #8c2d18;
     width: 20vh;
-    font-size: 2.5vh;
+    margin: 3vh;
+    padding: 1vh 4vh !important;
+    font-size: 2vh !important;
 
-}
-.img__logo2{
-    padding-bottom: 1vh;
-    width: 20vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
 }
 
 /* FOOTER */
@@ -116,7 +117,15 @@ footer {
     padding: 30px; 
 }
 .img__logo3{
-    width: 9vh;
+    width: 7vh;
+}
+ 
+.img__logo2{
+    padding-bottom: 1vh;
+    width: 13vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .container-body {
@@ -125,7 +134,7 @@ footer {
 } 
  
 .column1 {
-    max-width: 400px; 
+    max-width: 380px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,11 +143,6 @@ footer {
 .column1 h1 {
       font-size: 3vh; }
 
-.column1 label {
-      color: #c7c7c7;
-      text-align: center !important;
-      font-size: 2.3vh !important;
-    }
 
 .column2 {
         max-width: 400px;
@@ -162,12 +166,13 @@ footer {
 }
 .column3 h1 {
     padding-top: 2vh;
-    font-size: 3.5vh; 
+    font-size: 4vh; 
     padding-bottom: 2vh;
 }
 
 .row2 p {
-    font-size: 3vh; 
+    font-size: 3.1vh;
+    text-align: center; 
 }
 
 /* RESPONSIVE */

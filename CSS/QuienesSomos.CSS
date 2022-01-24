@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family: nunito-black;
+    src: url(/font/NunitoSans-Black.ttf);
+}
 /* BOTON WHATSAPP */
 .float{
 	position:fixed;
@@ -26,29 +30,10 @@
 .my-float{
 	margin-top:16px;
 }
-/* TITULO PRINCIPAL */
-.Title
-    {
-        width: 100%;
-        height: 40vh;
-        background-image: url('/media/images/carousell/WhatsApp\ Image\ 2022-01-03\ at\ 1.06.31\ PM.jpeg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-.Title h1{
-    width: 85%;
-    text-align: center;
-    color: white !important;
-    font-size: 5vh;
-}
 
 /*NAVBAR*/
 .header img{
-    width: 15vh;
+    width: 10vh;
     background-color: #8c2d18 !important;
 }
 .header nav {
@@ -65,31 +50,53 @@
     font-size: larger !important;
     justify-content: space-around !important;
 }
+/* TITULO PRINCIPAL */
+.Title
+    {
+        width: 100%;
+        height: 25vh;
+        background-image: url('/media/images/carousell/WhatsApp\ Image\ 2022-01-03\ at\ 1.06.31\ PM.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.Title h1{
+    width: 85%;
+    text-align: center;
+    color: white !important;
+    font-size: 5vh;
+    font-family: nunito-black;
+}
 
 .TEXT__title{
     color: #8c2d18 ;
+    font-size: 4.5vh;
     text-align: center;
-    margin: 3vh 0 3vh 0;
+    margin: 8vh 0;
+    font-family: nunito-black;
 }
 
 .TEXT__title__white{
     font-size: 4.5vh;
     text-align: center;
     padding: 5vh 0;
+
 }
 
 .TEXT__principal{
-    width: 85%;
+    width: 80%;
     margin: auto;
-    margin-bottom: 2vh;
     text-align: center;
 }
 .TEXT__quote {
-    width: 85%;
+    width: 65%;
     margin: auto;
     color: #A6281C;
     text-align: center;
-    padding: 4vh 0;
+    padding: 7vh 0;
 }
 
 /* FOOTER */
@@ -106,11 +113,11 @@ footer {
     padding: 30px; 
 }
 .img__logo3{
-    width: 9vh;
+    width: 7vh;
 }
 .img__logo2{
     padding-bottom: 1vh;
-    width: 20vh;
+    width: 13vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -121,27 +128,23 @@ footer {
 } 
  
 .column1 {
-    max-width: 400px; 
+    max-width: 380px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;}
 
 .column1 h1 {
-      font-size: 3vh; }
+    font-size: 3vh; 
+}
 
-.column1 label {
-      color: #c7c7c7;
-      text-align: center !important;
-      font-size: 2.3vh !important;
-    }
 
 .column2 {
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }       
 
 .column3 {
@@ -151,19 +154,22 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .column3__p{
-    font-size: 2.3vh; 
+    font-size: 2vh; 
     margin: auto;
     text-align: center;
 }
+
 .column3 h1 {
     padding-top: 2vh;
-    font-size: 3.5vh; 
+    font-size: 4vh; 
     padding-bottom: 2vh;
 }
 
 .row2 p {
-    font-size: 3vh; 
+    font-size: 3.1vh; 
+    text-align: center;
 }
 
 /*RESPONSIVE*/

@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face{
+    font-family: nunito-black;
+    src: url(/font/NunitoSans-Black.ttf);
+}
 /* BOTON WHATSAPP */
 .float{
 	position:fixed;
@@ -68,7 +71,7 @@
 .Title
     {
         width: 100%;
-        height: 40vh;
+        height: 25vh;
         background-image: url('/media/images/carousell/WhatsApp\ Image\ 2022-01-03\ at\ 1.06.31\ PM.jpeg');
         background-position: center;
         background-size: cover;
@@ -82,27 +85,25 @@
     text-align: center;
     color: white;
     font-size: 5vh;
+    font-family: nunito-black;
 }
-
-
+.TEXT__title__white{
+    font-family: nunito-black;
+    width: 70%;
+    font-size: 3vh;
+}
 .Products__text {
     background-color: #8c2d18;
     color: white;
     margin:auto;
     padding-bottom: 3vh;
 }
-.Products__text__title{
-    width: 80%;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    text-align: center;
-}
 
 .Products__text p {
     width: 85%;
     margin: auto;
     text-align: center;
+    line-height: 3.7vh;
 }
 /*PRODUCTOS*/
 
@@ -132,14 +133,16 @@
 .PRODUCTOS__DIV{
     display: flex;
     justify-content: center;
-    padding-bottom: 3vh;
+    padding-bottom: 10vh;
 }
 
 .PRODUCTOS__BUTTON{
     border: #8c2d18 solid !important;
     color: #8c2d18;
-    padding: 1.6vh;
-    font-size: 2.5vh;
+    margin: 3vh;
+    padding: 1vh 4vh !important;
+    font-size: 2vh !important;
+    border-radius: 13px;
 }
 
 /*FOOTER*/
@@ -156,11 +159,11 @@ footer {
     padding: 30px;
 }
 .img__logo3{
-    width: 9vh;
+    width: 7vh;
 }
 .img__logo2{
     padding-bottom: 1vh;
-    width: 20vh;
+    width: 13vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -171,7 +174,7 @@ footer {
 }
 
 .column1 {
-    max-width: 400px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,11 +183,6 @@ footer {
 .column1 h1 {
       font-size: 3vh; }
 
-.column1 label {
-      color: #c7c7c7;
-      text-align: center !important;
-      font-size: 2.3vh !important;
-    }
 
 .column2 {
         max-width: 400px;
@@ -208,12 +206,13 @@ footer {
 }
 .column3 h1 {
     padding-top: 2vh;
-    font-size: 3.5vh;
+    font-size: 4vh;
     padding-bottom: 2vh;
 }
 
 .row2 p {
-    font-size: 3vh;
+    font-size: 3.1vh;
+    text-align: center;
 }
 
 /*RESPONSIVE*/
@@ -227,9 +226,9 @@ footer {
         margin: 8vh 0;
     }
     .TEXT__title__white{
-        width: 94%;
+        width: 80%;
         margin: auto;
-        font-size: 5.5vh;
+        font-size: 5vh;
         text-align: center;
         padding: 8vh 0;
     }
@@ -255,7 +254,8 @@ footer {
         height: 65vh;
     }
     .Products__text p{
-        width: 60%;
+        width: 50%;
+        line-height: 4.5vh;
     }
     .PRODUCTOS{
         display: flex;
@@ -270,10 +270,13 @@ footer {
     }
     .PRODUCTOS div img{
         width: 50%;
-        border-radius: 15px;
+        border-radius: 13px;
     }
     .PRODUCTOS__Title{
         font-size: 4.2vh;
+    }
+    .PRODUCTOS__BUTTON{
+        border-radius: 13px;
     }
 }
 
