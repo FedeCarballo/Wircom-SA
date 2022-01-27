@@ -6,7 +6,15 @@
 }
 @font-face{
     font-family: nunito-black;
-    src: url(font/NunitoSans-Black.ttf);
+    src: url(/font/NunitoSans-Black.ttf);
+}
+@font-face {
+    font-family: nunito-light;
+    src: url(/font/NunitoSans-Light.ttf);
+}
+@font-face {
+    font-family: nunito-italic;
+    src: url(/font/NunitoSans-Italic.ttf);
 }
 /* BOTON WHATSAPP */
 .float{
@@ -66,6 +74,7 @@
 
 .nav-link{
     color: white !important;
+    text-shadow: black 1px 1.2px 6px !important;
     font-size: larger !important;
     justify-content: space-around !important;
 }
@@ -74,22 +83,26 @@
 .Carousell{
     width: 100%;
 }
-
 .carousel-item img{
     height: 70vh;
-    object-fit: cover ;
+    object-fit:cover ;
 }
+/* EMPRESA */
 
-/* EMPRESA Y PRODUCTOS */
-.POLITICA, .SERVICIOS{
-    background-color: #8c2d18;
-    color: white;
-}
 .EMPRESA {
     width: 90%;
     margin: auto;
     text-align: center;
     padding-bottom: 20vh;
+}
+
+.EMPRESA__TEXT p{
+    font-family: nunito-italic;
+}
+/* EMPRESA Y PRODUCTOS */
+.POLITICA, .SERVICIOS{
+    background-color: #8c2d18;
+    color: white;
 }
 
 .POLITICA h1{
@@ -112,6 +125,7 @@
     margin: auto;
     text-align: center;
     padding-bottom: 2vh;
+    font-family: nunito-italic;
 }
 .POLITICA__P2{
     padding-top: 4vh;
@@ -119,12 +133,14 @@
     margin: auto;
     text-align: center;
     padding-bottom: 6vh;
+    font-family: nunito-italic;
 }
 .POLITICA__LI{
     width: 55%;
     margin:auto;
     text-align: center;
     line-height: 3vh;
+    font-family: nunito-light;
    
 }
 .POLITICA__LI li{
@@ -161,18 +177,20 @@
     padding: 1vh 4vh !important;
     font-size: 2vh !important;
     border-radius: 13px;
+    font-family: nunito-italic;
 }
 
 /* SERVICIOS */
 .SERVICIOS{
-    padding:5vh 0 5vh 0; 
+    padding:5vh 0; 
     align-items: center;
 }
 
 .SERVICIOS h1{
     text-align: center;
-    padding-top: 2vh;
-    margin-bottom: 2vh;
+    padding-top: 6vh;
+    margin-bottom: 7vh;
+    font-size: 5vh;
 }
 
 .SERVICIOS__DIV {
@@ -181,13 +199,24 @@
     text-align: center;
 }
 
+.SERVICIOS__DIV__INDIVIDUAL{
+    margin-top: 7vh ;
+}
+
 .SERVICIOS__IMG {
     width: 7vh;
+}
+
+.SERVICIOS__DIV h3{
+    padding: 3vh 0;
+    font-size: 4vh;
+    font-family: nunito-black;
 }
 
 .SERVICIOS__P{
     margin: 2vh 0 2vh 0;
     padding-bottom: 2vh;
+    font-family: nunito-light;
 }
 
 /* GALERIA */
@@ -230,9 +259,6 @@ footer {
     justify-content: center;
     align-items: center;}
 
-.column1 h1 {
-    font-size: 3vh; 
-}
 
 .column2 {
     max-width: 400px;
@@ -249,23 +275,71 @@ footer {
     align-items: center;
 }
 .column3__p{
-    font-size: 2.3vh; 
+    font-size: 2vh; 
     margin: auto;
     text-align: center;
+    font-family: nunito-light;
 }
 .column3 h1 {
     padding-top: 2vh;
     font-size: 4vh; 
     padding-bottom: 2vh;
+    font-family: nunito-black;
 }
 
 .row2 p {
     font-size: 3.1vh;
     text-align: center; 
+    font-family: nunito-italic;
 }
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 900px){
+
+    .EMPRESA__TEXT p{
+        width: 80%;
+        margin: auto;
+        font-size: 1.9vh;
+        padding-bottom: 3vh;
+    }
+
+    .Carousell{
+        margin: auto;
+    }
+    .carousel-item img{
+        height: 50vh;
+        object-fit:cover ;
+    }
+    .POLITICA__P, .POLITICA__P2{
+        width: 60%;
+        font-size: 2vh;
+        margin-bottom: 3vh;
+    }
+    .POLITICA__LI {
+        margin-top:1vh;
+        width: 80%;
+        text-align: start;
+        font-size: 1.9vh;
+    }
+    .SERVICIOS__P{
+        width: 80%;
+        margin: auto;
+        padding-bottom: 2vh;
+        font-family: nunito-light;
+        font-size: 1.9vh;
+    }
+    .GALERIA {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 @media screen and (min-width: 990px) {
 
     .TEXT__title{
@@ -273,7 +347,6 @@ footer {
         color: #8c2d18 ;
         text-align: center;
         margin: 8vh 0;
-        font-family: nunito-black;
     }
     .TEXT__title__white{
         width: 94%;
@@ -281,7 +354,6 @@ footer {
         font-size: 6.5vh;
         text-align: center;
         padding: 8vh 0;
-        font-family: nunito-black;
     }
     .navbar {
         display: flex !important;
@@ -294,17 +366,14 @@ footer {
         margin: 0 3vh;
     }
     .nav-link{
-        margin: 0 6.6vh;
+        margin: 0 5vh;
         font-size: 2.5vh !important;
         font-family: nunito-black !important;
     }
     .container-fluid img{
         width: 10vh;
     }
-    .Carousel1{
-        width:1500px;
-        margin: auto;
-    }
+
     .EMPRESA{
         margin: 10vh 0;
         width: 90%;
@@ -366,6 +435,18 @@ footer {
     .SERVICIOS__DIV div{
         width: 45%;
         margin-top: 2vh;
+    }
+    .GALERIA {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Carousell{
+        width: 100%;
     }
     footer{
         margin-top: 5vh;
