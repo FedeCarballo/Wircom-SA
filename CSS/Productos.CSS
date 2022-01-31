@@ -6,6 +6,14 @@
     font-family: nunito-black;
     src: url(../font/NunitoSans-Black.ttf);
 }
+@font-face {
+    font-family: nunito-light;
+    src: url(../font/NunitoSans-Light.ttf);
+}
+@font-face {
+    font-family: nunito-italic;
+    src: url(../font/NunitoSans-Italic.ttf);
+}
 /* BOTON WHATSAPP */
 .float{
 	position:fixed;
@@ -207,16 +215,19 @@ footer {
     font-size: 2.3vh;
     margin: auto;
     text-align: center;
+    font-family: nunito-light;
 }
 .column3 h1 {
     padding-top: 2vh;
     font-size: 4vh;
     padding-bottom: 2vh;
+    font-family: nunito-black;
 }
 
 .row2 p {
     font-size: 3.1vh;
     text-align: center;
+    font-family: nunito-italic;
 }
 
 /*RESPONSIVE*/
