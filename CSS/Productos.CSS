@@ -42,26 +42,28 @@
 /*TITULOS PRINCIPALES*/
 .TEXT__title{
     font-size: 5vh;
-    color: #8c2d18 ;
+    color: #AC302C ;
     text-align: center;
-    padding: 4vh 0;
+    padding: 6vh 0;
+    font-family: nunito-black;
 }
 
 .TEXT__title__white{
-    width: 90%;
+    width: 70%;
     margin: auto;
-    font-size: 4.5vh;
+    font-size: 4vh;
     text-align: center;
     padding: 5vh 0;
+    font-family: nunito-black;
 }
 
 /* NAVBAR */
 .header img{
-    width: 15vh;
-    background-color: #8c2d18 !important;
+    width: 15vh !important;
+    background-color: #AC302C !important;
 }
 .header nav {
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
 }
 
 .navbar-nav {
@@ -71,8 +73,6 @@
 
 .nav-link{
     color: white !important;
-    text-shadow: black 1px 1.2px 6px !important;
-    font-size: larger !important;
     justify-content: space-around !important;
 }
 
@@ -97,18 +97,14 @@
     font-family: nunito-black;
     text-shadow: black 6px 6px 2px;
 }
-.TEXT__title__white{
-    font-family: nunito-black;
-    width: 70%;
-    font-size: 3vh;
-    text-shadow: black 5px 1px 4px;
-}
+
+/* TEXTO PRINCIPAL FONDO ROJO */
 .Products__text {
-    background-color: #8c2d18;
+    background-color: #AC302C;
     color: white;
     margin:auto;
     padding-bottom: 3vh;
-
+    
 }
 
 .Products__text p {
@@ -116,31 +112,34 @@
     margin: auto;
     text-align: center;
     line-height: 3.7vh;
+    font-family: nunito-italic !important;
 }
-/*PRODUCTOS*/
+/*PRODUCTOS FONDO BLANCO*/
 
-.PRODUCTOS div{
-    width: 70%;
+.PRODUCTOS__UNIDAD{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin: auto;
 }
 
 .PRODUCTOS div img{
-    width: 80%;
+    width: 100%;
+    height: 60vh;
     margin: auto;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .PRODUCTOS__Title{
-    color: #8c2d18 ;
+    color: #AC302C ;
     font-size: 3.5vh;
     text-align: center;
     margin: 4vh 0;
+    font-family: nunito-black;
 }
 .PRODUCTOS p{
     text-align: center;
-    margin-bottom: 4vh;
+    margin-bottom: 7vh;
+    font-family: nunito-light;
 }
 .PRODUCTOS__DIV{
     display: flex;
@@ -149,18 +148,18 @@
 }
 
 .PRODUCTOS__BUTTON{
-    border: #8c2d18 solid !important;
-    color: #8c2d18;
+    border: #AC302C solid !important;
+    color: #AC302C;
     margin: 3vh;
     padding: 1vh 4vh !important;
     font-size: 2vh !important;
     border-radius: 13px;
 }
 
-/*FOOTER*/
+/*FOOTER FONDO ROJO*/
 footer {
     width: 100%;
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
     color: white;
 }
 
@@ -170,12 +169,10 @@ footer {
     margin: auto;
     padding: 30px;
 }
+
 .img__logo3{
-    width: 7vh;
-}
-.img__logo2{
     padding-bottom: 1vh;
-    width: 13vh;
+    width: 25vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -230,13 +227,14 @@ footer {
     font-family: nunito-italic;
 }
 
-/*RESPONSIVE*/
+/* --------------------RESPONSIVE-------------------- */
 
 @media screen and (min-width: 990px) {
 
+    /* TITULOS */
     .TEXT__title{
         font-size: 6.5vh;
-        color: #8c2d18 ;
+        color: #AC302C ;
         text-align: center;
         margin: 8vh 0;
         font-family: nunito-black;
@@ -244,15 +242,17 @@ footer {
     .TEXT__title__white{
         width: 80%;
         margin: auto;
-        font-size: 6.5vh;
+        font-size: 6vh;
         text-align: center;
-        padding: 8vh 0;
+        padding-top: 10vh !important;
         font-family: nunito-black;
     }
     .Title h1{
         font-size: 6.5vh;
         font-family: nunito-black;
     }
+
+    /* NAVBAR */
     .navbar {
         display: flex !important;
 
@@ -265,15 +265,17 @@ footer {
     }
     .nav-link{
         margin: 0 5vh;
-        font-size: 2.5vh !important;
+        font-size: 3vh !important;
         font-family: nunito-black !important;
     }
     .container-fluid img{
         width: 10vh;
     }
+
+    /* TEXTO PRODUCTOS FONDO ROJO */
     .Products__text{
-        padding-top: 7vh;
-        height: 75vh;
+        padding-top: 1vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
 
@@ -286,27 +288,31 @@ footer {
     .TEXT__title{
         font-family: nunito-black;
     }
+
+    /* SECCION PRODUCTOS */
     .PRODUCTOS{
         display: flex;
-        padding-bottom: 5vh;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .PRODUCTOS__UNIDAD{
-        width: 39% !important;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 35% !important;
     }
-    .PRODUCTOS div img{
-        width: 70%;
+    .PRODUCTOS__UNIDAD img{
+        height: 750px !important;
+        object-fit: cover;
         border-radius: 13px;
     }
     .PRODUCTOS__Title{
-        font-size: 4.2vh;
+        font-size: 4.5vh;
         font-family: nunito-black;
     }
     .PRODUCTOS__BUTTON{
         border-radius: 13px;
+    }
+    .PRODUCTOS__UNIDAD__TEXT p {
+        font-family: nunito-light;
+        font-size: 2.3vh;
     }
 }
 

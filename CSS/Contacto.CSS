@@ -44,11 +44,11 @@ a{
 
 /*NAVBAR*/
 .header img{
-    width: 15vh;
-    background-color: #8c2d18 !important;
+    width: 15vh !important;
+    background-color: #AC302C !important;
 }
 .header nav {
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
 }
 
 .navbar-nav {
@@ -58,8 +58,6 @@ a{
 
 .nav-link{
     color: white !important;
-    text-shadow: black 1px 1.2px 6px !important;
-    font-size: larger !important;
     justify-content: space-around !important;
 }
 
@@ -86,7 +84,7 @@ a{
     text-shadow: black 6px 6px 2px;
 }
 
-/* MEDIOS DE CONTACTO */
+/* MEDIOS DE CONTACTO FONDO BLANCO*/
 .CONTACTO{
     text-align: center;
     padding-bottom: 4vh;
@@ -96,7 +94,7 @@ a{
     font-size: 2.5vh;
 }
 .CONTACTO__titles {
-    color: #8c2d18 ;
+    color: #AC302C ;
     font-size: 4vh !important;
     text-align: center;
     margin: 3vh 0 3vh 0;
@@ -107,8 +105,8 @@ a{
 }
 
 .CONTACTO__button{
-    border: #8c2d18 solid !important;
-    color: #8c2d18;
+    border: #AC302C solid !important;
+    color: #AC302C;
     width: 20vh;
     margin: 3vh;
     padding: 1vh 4vh !important;
@@ -117,10 +115,10 @@ a{
     font-family: nunito-light !important;
 }
 
-/* FOOTER */
+/* FOOTER FONDO ROJO*/
 footer {
     width: 100%;
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
     color: white; 
 }
   
@@ -130,13 +128,11 @@ footer {
     margin: auto;
     padding: 30px; 
 }
-.img__logo3{
-    width: 7vh;
-}
+
  
-.img__logo2{
+.img__logo3{
     padding-bottom: 1vh;
-    width: 13vh;
+    width: 25vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -189,12 +185,12 @@ footer {
     font-family: nunito-italic;
 }
 
-/* RESPONSIVE */
+/* --------------------RESPONSIVE-------------------- */
 @media screen and (min-width: 990px) {
 
     .TEXT__title, .CONTACTO__titles{
         font-size:6.5vh;
-        color: #8c2d18 ;
+        color: #AC302C ;
         text-align: center;
         margin: 8vh 0;
     }
@@ -221,7 +217,7 @@ footer {
     }
     .nav-link{
         margin: 0 5vh;
-        font-size: 2.5vh !important;
+        font-size: 3vh !important;
         font-family: nunito-black !important;
     }
   

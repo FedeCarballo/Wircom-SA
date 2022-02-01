@@ -44,7 +44,7 @@
 /*TITULOS PRINCIPALES*/
 .TEXT__title{
     font-size: 5.5vh;
-    color: #8c2d18 ;
+    color: #AC302C ;
     text-align: center;
     margin: 4vh 0 4vh 0;
     font-family: nunito-black;
@@ -60,11 +60,11 @@
 
 /*NAVBAR*/
 .header img{
-    width: 15vh;
-    background-color: #8c2d18 !important;
+    width: 15vh !important;
+    background-color: #AC302C !important;
 }
 .header nav {
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
 }
 
 .navbar-nav {
@@ -74,8 +74,6 @@
 
 .nav-link{
     color: white !important;
-    text-shadow: black 1px 1.2px 6px !important;
-    font-size: larger !important;
     justify-content: space-around !important;
 }
 
@@ -84,9 +82,10 @@
     width: 100%;
 }
 .carousel-item img{
-    height: 70vh;
+    height: 55vh;
     object-fit:cover ;
 }
+
 /* EMPRESA */
 
 .EMPRESA {
@@ -101,7 +100,7 @@
 }
 /* EMPRESA Y PRODUCTOS */
 .POLITICA, .SERVICIOS{
-    background-color: #8c2d18;
+    background-color: #AC302C;
     color: white;
 }
 
@@ -156,7 +155,7 @@
 }
 .img__logo2{
     padding-bottom: 1vh;
-    width: 12vh;
+    width: 25vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -171,13 +170,20 @@
     justify-content: center;
 }
 .PRODUCTOS__BUTTON, .MAS__BUTTON {
-    border: #8c2d18 solid !important;
-    color: #8c2d18;
+    border: #AC302C solid !important;
+    color: #AC302C;
     margin: 3vh;
     padding: 1vh 4vh !important;
     font-size: 2vh !important;
     border-radius: 13px;
     font-family: nunito-italic;
+    transition: 800ms !important;
+}
+.MAS__BUTTON:hover, .PRODUCTOS__BUTTON:hover {
+    background: #AC302C ;
+    color: white;
+    border: solid rgb(202, 132, 132) 2px !important;
+    
 }
 
 /* SERVICIOS */
@@ -221,7 +227,7 @@
 
 /* GALERIA */
 .GALERIA {
-    width: 50%;
+    width: 80%;
     margin: auto;
     padding-bottom: 4vh;
     display: flex;
@@ -229,11 +235,17 @@
     justify-content: center;
     align-items: center;
 }
-
+.Carousel2{
+    width: 100% !important;
+}
+.Carousel2 .carousel-item img{
+    height: 100%;
+    border-radius: 10px !important;
+}
 /* FOOTER */
 footer {
     width: 100%;
-    background-color: #8c2d18 !important;
+    background-color: #AC302C !important;
     color: white; 
 }
   
@@ -244,7 +256,11 @@ footer {
     padding: 30px; 
 }
 .img__logo3{
-    width: 9vh;
+    padding-bottom: 1vh;
+    width: 25vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .container-body {
@@ -293,24 +309,28 @@ footer {
     font-family: nunito-italic;
 }
 
-/* RESPONSIVE */
+/* --------------------RESPONSIVE-------------------- */
 
 @media screen and (max-width: 900px){
+ 
+    /* CAROUSELL */
+    .Carousell{
+        margin: auto;
+    }
+    .carousel-item img{
+       
+        object-fit:cover ;
+    }
 
+    /* EMPRESA */
     .EMPRESA__TEXT p{
         width: 80%;
         margin: auto;
         font-size: 1.9vh;
         padding-bottom: 3vh;
     }
-
-    .Carousell{
-        margin: auto;
-    }
-    .carousel-item img{
-        height: 50vh;
-        object-fit:cover ;
-    }
+    
+    /* POLITICA */
     .POLITICA__P, .POLITICA__P2{
         width: 60%;
         font-size: 2vh;
@@ -322,6 +342,8 @@ footer {
         text-align: start;
         font-size: 1.9vh;
     }
+    
+    /* SERVICIOS */
     .SERVICIOS__P{
         width: 80%;
         margin: auto;
@@ -329,22 +351,14 @@ footer {
         font-family: nunito-light;
         font-size: 1.9vh;
     }
-    .GALERIA {
-        width: 90%;
-        margin: auto;
-        padding-bottom: 4vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
+
 }
 @media screen and (min-width: 990px) {
 
+    /* TITULOS PRINCIPALES */
     .TEXT__title{
         font-size: 6.5vh;
-        color: #8c2d18 ;
+        color: #AC302C ;
         text-align: center;
         margin: 8vh 0;
     }
@@ -355,6 +369,8 @@ footer {
         text-align: center;
         padding: 8vh 0;
     }
+
+    /* NAVBAR */
     .navbar {
         display: flex !important;
 
@@ -367,20 +383,32 @@ footer {
     }
     .nav-link{
         margin: 0 5vh;
-        font-size: 2.5vh !important;
+        font-size: 3vh !important;
         font-family: nunito-black !important;
     }
     .container-fluid img{
         width: 10vh;
     }
 
+    /* CAROUSELL INICIAL */
+    .Carousell{
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 90vh;
+        object-fit:cover ;
+    }
+
+    /* EMPRESA FONDO BLANCO */
     .EMPRESA{
-        margin: 10vh 0;
+        margin: 5vh 0;
         width: 90%;
         display: flex;
+        padding-bottom: 7vh !important;
     }
     .EMPRESA__TITLE__TEXT{
         width: 70%;
+
     }
     .EMPRESA__TITLE__TEXT p{
         width: 80%;
@@ -392,12 +420,14 @@ footer {
         margin: auto;
         justify-content: center;
         align-items: center;
+        padding-top: 20vh !important;
     }
     .MAS__BUTTON{
         padding:1vh 4vh ;
         font-size: 2vh;
     }
 
+    /* POLITICA DE CALIDAD FONDO ROJO */
     .TEXT__title__white1{
         padding: 6vh 0;
         font-size: 6.5vh;
@@ -418,9 +448,13 @@ footer {
         font-size: 2vh;
         line-height: 6vh;
     }
+
+    /* VER PRODUCTOS FONDO BLANCO*/
     .PRODUCTOS{
         margin: 5vh 0;
     }
+    
+    /* SERVICIOS FONDO ROJO */
     .SERVICIOS__DIV{
         display: flex;
         justify-content: space-around;
@@ -436,6 +470,8 @@ footer {
         width: 45%;
         margin-top: 2vh;
     }
+
+    /* GALERIA FONDO BLANCO*/
     .GALERIA {
         width: 90%;
         margin: auto;
@@ -445,9 +481,16 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .Carousell{
-        width: 100%;
+    .Carousel2{
+        width: 60% !important;
+        margin: auto;
     }
+    .Carousel2 .carousel-item img{
+        height: 100vh;
+        border-radius: 10px !important;
+    }
+
+    /* FOOTER FONDO ROJO */
     footer{
         margin-top: 5vh;
     }
