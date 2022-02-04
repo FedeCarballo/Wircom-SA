@@ -41,7 +41,7 @@
 
 /*NAVBAR*/
 .header img{
-    width: 15vh !important;
+    width: 20vh !important;
     background-color: #AC302C !important;
 }
 .header nav {
@@ -54,8 +54,13 @@
 }
 
 .nav-link{
+    display: flex;
     color: white !important;
-    justify-content: space-around !important;
+    margin: 0 5vh;
+    font-size: 2.8vh;
+    font-family: nunito-black !important;
+    justify-content: center !important;
+    align-items: center !important; 
 }
 /* TITULO PRINCIPAL */
 .Title
